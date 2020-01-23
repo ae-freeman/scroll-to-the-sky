@@ -1,0 +1,27 @@
+.test {
+    height: 2000px;
+    /* background-color: aqua; */
+}
+
+body {
+    background-color: #5f6caf;
+}
+
+.counter-wrapper {
+    text-align: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.sticky {
+    position: relative;
+    top: 450px;
+
+}
+
+.sticky-footer {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
