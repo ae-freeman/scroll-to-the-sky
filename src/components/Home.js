@@ -22,11 +22,9 @@ class Home extends React.Component {
 
 
     handleEvent = (e) => {
-        //change this to be + 727 or something like that
-        //maybe use an absolute value?
-        
-        //Math.abs(window.pageYoffset - 727)
-        var scrollPosition = Math.floor((window.pageYOffset)/2);
+        //set scroll position so that the bottom of page is at 0 metres (representing the ground)
+        var scrollPosition = Math.floor(Math.abs(window.pageYOffset - 1454) / 2);
+
         this.setState({
             count: scrollPosition
         });

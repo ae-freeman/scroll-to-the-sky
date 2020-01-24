@@ -4,7 +4,9 @@
 }
 
 body {
-    background-color: #5f6caf;
+
+background: rgb(34,195,195);
+background: linear-gradient(0deg, rgba(34,195,195,1) 0%, rgba(45,89,253,1) 100%);
 }
 
 .counter-wrapper {
