@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
 import React from 'react';
+// import trees from "../images/trees.png"
 
 
 const Start = () => {
@@ -7,7 +8,7 @@ const Start = () => {
     return (
         
         <div className="sticky-footer" id="bottomDiv">
-        <h1>Sticky footer</h1>
+        
         </div>
     )
             

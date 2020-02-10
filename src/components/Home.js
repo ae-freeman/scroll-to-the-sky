@@ -1,9 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom";
-
-
-import Counter from "./counter";
+import React from "react";
 import Start from "./Start";
+import BottomLevel from "./BottomLevel";
 
 
 
@@ -23,8 +20,9 @@ class Home extends React.Component {
 
     handleEvent = (e) => {
         //set scroll position so that the bottom of page is at 0 metres (representing the ground)
-        var scrollPosition = Math.floor(Math.abs(window.pageYOffset - 1454) / 2);
-
+        console.log(window.pageYOffset);
+        var scrollPosition = Math.floor(Math.abs(window.pageYOffset - 1714) / 2);
+        // console.log(document.body.offsetHeight);
         this.setState({
             count: scrollPosition
         });
@@ -65,7 +63,7 @@ class Home extends React.Component {
             </div>
 
             <div id="footer">
-            <Start/>
+                <BottomLevel className="ground"/>
             </div>
            
 
